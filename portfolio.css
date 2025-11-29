@@ -1,0 +1,161 @@
+* {
+margin: 0;
+padding:0;
+box-sizing: border-box;
+font-family:"poppins",sans-serif
+}
+body{
+    background:#f3f3ff;
+    color:#222;
+    scroll-behavior: smooth;
+}
+header{
+    width:100%;
+    padding:20px 50px;
+    background:#fff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    position:sticky;
+    top: 0;
+    z-index: 10;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+nav .logo{
+    font-size:24px;
+    font-weight: 700;
+    color: #5a39ff;
+    
+}
+nav ul{
+    list-style: none;
+    display:flex;
+    gap:25px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight:none;
+    color:#333;
+    transition: 0.3s;
+}
+nav ul li a:hover{
+    color:#5a39ff;
+}
+.hero{
+    height:70vh;
+    display: flex;
+     align-items: center ;
+     justify-content:center;
+     text-align:center;
+     background: linear-gradient(135deg,#8c7bff,#b8c0ff);
+     color:white;
+}
+.hero h1{
+    font-size:50px;
+}
+.hero span{
+    color:#fff700;
+
+}
+.hero p{
+    font-size:20px;
+    margin-top:20px;
+}
+section h2{
+    font-size:32px;
+    margin-bottom:15px;
+    text-align:center;
+    color:#5a39ff;
+}
+.about,.contact{
+    padding:50px 80px;
+    text-align:center;
+    font-size:18px;
+
+}
+.skills{
+    background:#eceaff;
+    padding: 50px 80px;
+}
+.skill-container{
+    display: flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+.skill-card{
+    background:white;
+    padding:15px 25px;
+    border-radius:10px;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor:pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);  
+}
+.skill-card:hover{
+    background:#5a39ff;
+    color:white;
+    transform: scale(1.1);
+}
+.projects{
+    padding: 50px 80px;
+}
+.project-box{
+    background: white;
+    padding:25px;
+    width:85%;
+    margin:15px auto;
+    border-radius:12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+.project-box:hover{
+    transform: translatey(-10px);
+}
+.btn{
+    display: inline-block;
+    margin-top:10px;
+    padding: 8px 15px;
+    background:#5a39ff;
+    color:white;
+    border-radius:5px;
+    text-decoration:none;
+    transition: 0.3s;
+}
+.btn:hover{
+    background:#3726c8;
+}
+footer{
+    text-align: center;
+    padding:20px;
+    background: white;
+    margin-top:40px;
+}
+.hero img {
+    width: 250px;          /* Set desired size */
+    height: 250px;         /* Keep width and height equal for perfect circle */
+    border-radius: 50%;    /* Makes the image circular */
+    object-fit: cover;     /* Ensures image covers the circle without stretching */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3); /* Optional shadow */
+    transition: transform 0.5s ease; /* Smooth hover effect */
+    margin-left:20px;
+}
+
+/* Hover Effect */
+.hero img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+
+
+@media(max-width:768px)
+{
+    nav ul{
+        display: none;
+    }
+    .hero h1{
+        font-size:28px;
+    }
+}
